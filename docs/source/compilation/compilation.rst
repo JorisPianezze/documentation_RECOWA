@@ -9,12 +9,12 @@ First you need to compile :ref:`compilation_NETCDF` and :ref:`compilation_OASIS`
 
    For :ref:`compilation_CROCO`'s compilation you need to know the numbers of horizontal and vertical points of your domain before compile it.
 
-.. _compilation_NETCDF:
+.. _compilation_libraries:
 
-NetCDF
+Libraries
 ====================================
 
-You can compile NetCDF library using the script :
+You can compile AEC, HDF and NetCDF libraries you can use following commands :
 
 .. tab-set::
 
@@ -22,61 +22,48 @@ You can compile NetCDF library using the script :
 
       .. include:: compile_libraries_laptop_joris.rst
 
-.. code-block:: bash
+.. tip::
 
-   cd models_YOURCASESTUDY/libraries/
-   sbatch install_aer_hdf_netcdf_libraries.sub
+   To test compilation of the different libraries, do :
 
-To test compilation of the different libraries, do :
+   .. code-block:: bash
 
-.. code-block:: bash
+      ./build_netcdf-X.X.X/bin/nf-config --all
 
-   ./build_netcdf-X.X.X/bin/nf-config --all
+   And you need to see :
 
-And you need to see :
+   .. code-block:: bash
 
-.. code-block:: bash
+      This netCDF-Fortran X.X.X has been built with the following features:
 
-   This netCDF-Fortran X.X.X has been built with the following features:
+        --cc        -> XXX
+        --cflags    -> XXX
+   
+        --fc        -> XXX
+        --fflags    -> XXX
+        --flibs     -> XXX
+        --has-f90   -> XXX
+        --has-f03   -> XXX
 
-     --cc        -> XXX
-     --cflags    -> XXX
+        --has-nc2   -> XXX
+        --has-nc4   -> XXX
 
-     --fc        -> XXX
-     --fflags    -> XXX
-     --flibs     -> XXX
-     --has-f90   -> XXX
-     --has-f03   -> XXX
-
-     --has-nc2   -> XXX
-     --has-nc4   -> XXX
-
-     --prefix    -> XXX
-     --includedir-> XXX
-     --version   -> netCDF-Fortran X.X.X
+        --prefix    -> XXX
+        --includedir-> XXX
+        --version   -> netCDF-Fortran X.X.X
 
 .. _compilation_OASIS:
 
 OASIS
 ====================================
 
-To compile OASIS you need to adapt the make.inc and make.${machine} path. 
+To compile OASIS you can use following commands :
 
-.. warning:: 
+.. tab-set::
 
-   * You need to put absolute path !
-   * make.inc call make.${machine} file
-   * To know environment variable ${machine} look at your environment.sh file
+   .. tab-item:: Laptop Ubuntu 20.04
 
-Then you can compile OASIS :
-
-.. code-block:: bash
-  
-   cd models_YOURCASESTUDY/
-   source environment.sh
-   cd oasis3-mct_5.2/util/make_dir/
-   make realclean -f TopMakefileOasis3
-   make -f TopMakefileOasis3
+      .. include:: compile_oasis_laptop_joris.rst
 
 .. _compilation_MESONH:
 
