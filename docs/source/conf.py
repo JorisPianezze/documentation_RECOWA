@@ -21,7 +21,7 @@ import re
 # ------- get laptop_joris files
 url_install_laptop_joris = "https://raw.githubusercontent.com/JorisPianezze/models_recowa/refs/heads/master/environments/laptop_joris/"
 urllib.request.urlretrieve(url_install_laptop_joris+"check_tree.rst", "installation/check_tree_laptop_joris.rst")
-urllib.request.urlretrieve(url_install_laptop_joris+"compilation_netcdf/compile.rst", "compilation/compile_netcdf_laptop_joris.rst")
+urllib.request.urlretrieve(url_install_laptop_joris+"compilation_libraries/compile.rst", "compilation/compile_libraries_laptop_joris.rst")
 urllib.request.urlretrieve(url_install_laptop_joris+"compilation_oasis/compile.rst", "compilation/compile_oasis_laptop_joris.rst")
 
 # -- General configuration ---------------------------------------------------

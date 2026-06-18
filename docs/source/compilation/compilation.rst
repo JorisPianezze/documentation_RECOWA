@@ -20,7 +20,7 @@ You can compile NetCDF library using the script :
 
    .. tab-item:: Laptop Ubuntu 20.04
 
-      .. include:: compile_netdf_laptop_joris.rst
+      .. include:: compile_libraries_laptop_joris.rst
 
 .. code-block:: bash
 
