@@ -65,6 +65,19 @@ To compile OASIS you can use following commands :
 
       .. include:: compile_oasis_laptop_joris.rst
 
+.. _compilation_XIOS:
+
+XIOS
+====================================
+
+To compile XIOS you can use following commands :
+
+.. tab-set::
+
+   .. tab-item:: Laptop Ubuntu 20.04
+
+      .. include:: compile_xios_laptop_joris.rst
+
 .. _compilation_MESONH:
 
 Meso-NH
