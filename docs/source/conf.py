@@ -25,6 +25,8 @@ urllib.request.urlretrieve(url_install_laptop_joris+"compilation_libraries/compi
 urllib.request.urlretrieve(url_install_laptop_joris+"compilation_oasis/compile.rst", "compilation/compile_oasis_laptop_joris.rst")
 urllib.request.urlretrieve(url_install_laptop_joris+"compilation_xios/compile.rst", "compilation/compile_xios_laptop_joris.rst")
 urllib.request.urlretrieve(url_install_laptop_joris+"compilation_mesonh/compile.rst", "compilation/compile_mesonh_laptop_joris.rst")
+urllib.request.urlretrieve(url_install_laptop_joris+"compilation_ww3/compile.rst", "compilation/compile_ww3_laptop_joris.rst")
+urllib.request.urlretrieve(url_install_laptop_joris+"compilation_croco/compile.rst", "compilation/compile_croco_laptop_joris.rst")
 
 # -- General configuration ---------------------------------------------------
 

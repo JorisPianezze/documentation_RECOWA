@@ -121,17 +121,13 @@ Many programs have been compiled. In this documentation, we will focus on those 
 CROCO
 ====================================
 
-Whatever the computers, you can follow the same procedure to compile CROCO.
+To compile CROCO you can use following commands :
 
-First, you need to go to the directory :
+.. tab-set::
 
-.. code-block::
+   .. tab-item:: Laptop Ubuntu 20.04
 
-   cd models_CASESTUDY/croco-v2.1.0/exe_${machine}
-
-.. note::
-
-   * To know environment variable ${machine} look at your environment.sh file
+      .. include:: compile_croco_laptop_joris.rst
 
 In this directoy, there are :
 
@@ -203,6 +199,13 @@ In the croco folder, I therefore have two folders exe_YOURCCONFIG_Xcore_CPLOA an
 
 WW3
 ====================================
+
+.. tab-set::
+
+   .. tab-item:: Laptop Ubuntu 20.04
+
+      .. include:: compile_ww3_laptop_joris.rst
+
 
 The steps for compiling WW3 are detailed in the WW3 manual (ww3_dir/manual/), but they are also outlined here for enhanced clarity.
 Regardless of the computer you are using, you can follow the same procedure to compile WW3. Next, you need to prepare the link and comp files required for compiling WW3 by using the following command:
