@@ -10,6 +10,20 @@ author    = 'J. Pianezze'
 release   = '0.0'
 version   = '0.0.0'
 
+# --------------------------------------------------------
+#   Get and modify install.md
+# --------------------------------------------------------
+
+import urllib.request
+import os
+import re
+
+# ------- get laptop_joris files
+url_install_laptop_joris = "https://raw.githubusercontent.com/JorisPianezze/models_recowa/refs/heads/master/environments/laptop_joris/"
+urllib.request.urlretrieve(url_install_laptop_joris+"check_tree.rst", "installation/check_tree_laptop_joris.rst")
+urllib.request.urlretrieve(url_install_laptop_joris+"compilation_netcdf/compile.rst", "compilation/compile_netcdf_laptop_joris.rst")
+urllib.request.urlretrieve(url_install_laptop_joris+"compilation_oasis/compile.rst", "compilation/compile_oasis_laptop_joris.rst")
+
 # -- General configuration ---------------------------------------------------
 
 extensions = [
@@ -46,7 +60,10 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-html_theme = 'sphinx_rtd_theme'
+html_theme       = 'sphinx_rtd_theme'
+html_static_path = ['_static']
+html_css_files   = ['custom.css']
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+

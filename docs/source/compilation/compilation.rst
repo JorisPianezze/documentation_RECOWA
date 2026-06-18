@@ -16,6 +16,12 @@ NetCDF
 
 You can compile NetCDF library using the script :
 
+.. tab-set::
+
+   .. tab-item:: Laptop Ubuntu 20.04
+
+      .. include:: compile_netdf_laptop_joris.rst
+
 .. code-block:: bash
 
    cd models_YOURCASESTUDY/libraries/
