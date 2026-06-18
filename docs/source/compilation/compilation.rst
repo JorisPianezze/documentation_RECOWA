@@ -70,40 +70,14 @@ To compile OASIS you can use following commands :
 Meso-NH
 ====================================
 
-Before compiling Meso-NH, you need to change MNHENV in the :file:`MNH/src/configure` file by the path of your environment.sh file :
+To compile Meso-NH you can use following commands :
 
-.. code-block:: bash
+.. tab-set::
 
-   export MNHENV=${MNHENV:-"
-          source /XXX/models_YOURCASESTUDY/environment.sh
-   "}
+   .. tab-item:: Laptop Ubuntu 20.04
 
-Then to compile Meso-NH's package, do :
+      .. include:: compile_mesonh_laptop_joris.rst
 
-.. code-block:: bash
-
-   cd models_YOURCASESTUDY/MNH-V5-7-2/src/
-   
-   export VER_MPI=MPIAUTO
-   export VER_CDF=CDFPERSO
-   export VER_OASIS=OASISPERSO
-
-   ./configure
-   
-and then, depending of the architecture, compile interactively :
-
-.. code-block:: bash
-
-   . ../conf/profile_mesonh
-   make   
-   make installmaster
-
-or submit a job (take care of the name of profile_mesonh in the job). By example, for belenos, do :
-
-.. code-block:: bash
-
-   sbatch job_make_mesonh_BullX_belenos
-  
 .. note::
    
    * By setting VER_CDF=CDFPERSO and VER_OASIS=OASISPERSO, compilation of Meso-NH will use NETCDF_CONFIG must point to the nf-config file. OASISDIR must point to the OASIS build directory. NETCDF_CONFIG and OASISDIR environment variables are defined in environment.sh file.
