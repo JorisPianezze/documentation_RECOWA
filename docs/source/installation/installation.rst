@@ -77,3 +77,8 @@ At the end of this section, you need to have following script and directories :
    .. tab-item:: Laptop Ubuntu 20.04
 
       .. include:: check_tree_laptop_joris.rst
+
+   .. tab-item:: Laptop Ubuntu 24.04
+
+      .. include:: check_tree_laptop_mathieu.rst
+

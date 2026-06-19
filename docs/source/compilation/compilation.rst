@@ -22,6 +22,10 @@ You can compile AEC, HDF and NetCDF libraries you can use following commands :
 
       .. include:: compile_libraries_laptop_joris.rst
 
+   .. tab-item:: Laptop Ubuntu 24.04
+
+      .. include:: compile_libraries_laptop_mathieu.rst
+
 .. tip::
 
    To test compilation of the different libraries, do :
@@ -65,6 +69,10 @@ To compile OASIS you can use following commands :
 
       .. include:: compile_oasis_laptop_joris.rst
 
+   .. tab-item:: Laptop Ubuntu 24.04
+
+      .. include:: compile_oasis_laptop_mathieu.rst
+
 .. _compilation_XIOS:
 
 XIOS
@@ -78,6 +86,10 @@ To compile XIOS you can use following commands :
 
       .. include:: compile_xios_laptop_joris.rst
 
+   .. tab-item:: Laptop Ubuntu 24.04
+
+      .. include:: compile_xios_laptop_mathieu.rst
+
 .. _compilation_MESONH:
 
 Meso-NH
@@ -90,6 +102,10 @@ To compile Meso-NH you can use following commands :
    .. tab-item:: Laptop Ubuntu 20.04
 
       .. include:: compile_mesonh_laptop_joris.rst
+
+   .. tab-item:: Laptop Ubuntu 24.04
+
+      .. include:: compile_mesonh_laptop_mathieu.rst
 
 .. note::
    
@@ -128,6 +144,10 @@ To compile CROCO you can use following commands :
    .. tab-item:: Laptop Ubuntu 20.04
 
       .. include:: compile_croco_laptop_joris.rst
+
+   .. tab-item:: Laptop Ubuntu 24.04
+
+      .. include:: compile_croco_laptop_mathieu.rst
 
 In this directoy, there are :
 
@@ -205,6 +225,10 @@ WW3
    .. tab-item:: Laptop Ubuntu 20.04
 
       .. include:: compile_ww3_laptop_joris.rst
+
+   .. tab-item:: Laptop Ubuntu 24.04
+
+      .. include:: compile_ww3_laptop_mathieu.rst
 
 
 The steps for compiling WW3 are detailed in the WW3 manual (ww3_dir/manual/), but they are also outlined here for enhanced clarity.

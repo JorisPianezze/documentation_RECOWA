@@ -28,6 +28,16 @@ urllib.request.urlretrieve(url_install_laptop_joris+"compilation_mesonh/compile.
 urllib.request.urlretrieve(url_install_laptop_joris+"compilation_ww3/compile.rst", "compilation/compile_ww3_laptop_joris.rst")
 urllib.request.urlretrieve(url_install_laptop_joris+"compilation_croco/compile.rst", "compilation/compile_croco_laptop_joris.rst")
 
+# ------- get laptop_mathieu files
+url_install_laptop_mathieu = "https://raw.githubusercontent.com/JorisPianezze/models_RECOWA/refs/heads/master/environments/laptop_mathieu/"
+urllib.request.urlretrieve(url_install_laptop_mathieu+"check_tree.rst", "installation/check_tree_laptop_mathieu.rst")
+urllib.request.urlretrieve(url_install_laptop_mathieu+"compilation_libraries/compile.rst", "compilation/compile_libraries_laptop_mathieu.rst")
+urllib.request.urlretrieve(url_install_laptop_mathieu+"compilation_oasis/compile.rst", "compilation/compile_oasis_laptop_mathieu.rst")
+urllib.request.urlretrieve(url_install_laptop_mathieu+"compilation_xios/compile.rst", "compilation/compile_xios_laptop_mathieu.rst")
+urllib.request.urlretrieve(url_install_laptop_mathieu+"compilation_mesonh/compile.rst", "compilation/compile_mesonh_laptop_mathieu.rst")
+urllib.request.urlretrieve(url_install_laptop_mathieu+"compilation_ww3/compile.rst", "compilation/compile_ww3_laptop_mathieu.rst")
+urllib.request.urlretrieve(url_install_laptop_mathieu+"compilation_croco/compile.rst", "compilation/compile_croco_laptop_mathieu.rst")
+
 # -- General configuration ---------------------------------------------------
 
 extensions = [
