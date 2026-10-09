@@ -7,8 +7,8 @@
 project   = 'RECOWA'
 copyright = '2026, J. Pianezze'
 author    = 'J. Pianezze'
-release   = '0.0'
-version   = '0.0.0'
+release   = '0.1'
+version   = '0.1.0'
 
 # --------------------------------------------------------
 #   Get and modify install.md
@@ -19,9 +19,9 @@ import os
 import re
 
 # ------- get laptop_joris files
-url_install_laptop_joris = "https://raw.githubusercontent.com/JorisPianezze/models_RECOWA/refs/heads/master/environments/laptop_joris/"
+url_install_laptop_joris = "https://raw.githubusercontent.com/JorisPianezze/models_RECOWA/refs/heads/release/0.1/environments/laptop_joris/"
 urllib.request.urlretrieve(url_install_laptop_joris+"check_tree.rst", "installation/check_tree_laptop_joris.rst")
-urllib.request.urlretrieve(url_install_laptop_joris+"compilation_libraries/compile.rst", "compilation/compile_libraries_laptop_joris.rst")
+urllib.request.urlretrieve(url_install_laptop_joris+"compilation_netcdf/compile.rst", "compilation/compile_netcdf_laptop_joris.rst")
 urllib.request.urlretrieve(url_install_laptop_joris+"compilation_oasis/compile.rst", "compilation/compile_oasis_laptop_joris.rst")
 urllib.request.urlretrieve(url_install_laptop_joris+"compilation_xios/compile.rst", "compilation/compile_xios_laptop_joris.rst")
 urllib.request.urlretrieve(url_install_laptop_joris+"compilation_mesonh/compile.rst", "compilation/compile_mesonh_laptop_joris.rst")
@@ -29,13 +29,10 @@ urllib.request.urlretrieve(url_install_laptop_joris+"compilation_ww3/compile.rst
 urllib.request.urlretrieve(url_install_laptop_joris+"compilation_croco/compile.rst", "compilation/compile_croco_laptop_joris.rst")
 
 # ------- get laptop_mathieu files
-url_install_laptop_mathieu = "https://raw.githubusercontent.com/JorisPianezze/models_RECOWA/refs/heads/master/environments/laptop_mathieu/"
+url_install_laptop_mathieu = "https://raw.githubusercontent.com/JorisPianezze/models_RECOWA/refs/heads/release/0.1/environments/laptop_mathieu/"
 urllib.request.urlretrieve(url_install_laptop_mathieu+"check_tree.rst", "installation/check_tree_laptop_mathieu.rst")
-urllib.request.urlretrieve(url_install_laptop_mathieu+"compilation_libraries/compile.rst", "compilation/compile_libraries_laptop_mathieu.rst")
-urllib.request.urlretrieve(url_install_laptop_mathieu+"compilation_oasis/compile.rst", "compilation/compile_oasis_laptop_mathieu.rst")
+urllib.request.urlretrieve(url_install_laptop_mathieu+"compilation_netcdf/compile.rst", "compilation/compile_netcdf_laptop_mathieu.rst")
 urllib.request.urlretrieve(url_install_laptop_mathieu+"compilation_xios/compile.rst", "compilation/compile_xios_laptop_mathieu.rst")
-urllib.request.urlretrieve(url_install_laptop_mathieu+"compilation_mesonh/compile.rst", "compilation/compile_mesonh_laptop_mathieu.rst")
-urllib.request.urlretrieve(url_install_laptop_mathieu+"compilation_ww3/compile.rst", "compilation/compile_ww3_laptop_mathieu.rst")
 urllib.request.urlretrieve(url_install_laptop_mathieu+"compilation_croco/compile.rst", "compilation/compile_croco_laptop_mathieu.rst")
 
 # -- General configuration ---------------------------------------------------
@@ -81,3 +78,7 @@ html_css_files   = ['custom.css']
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
+rst_prolog = """
+.. |release_models_RECOWA| replace:: 0.1
+.. |version_models_RECOWA| replace:: 0.1.0
+"""

@@ -13,14 +13,18 @@ However, I recommend dedicating a specific directory for your case study, partic
 To get the models template directory, do :
 
 .. code-block:: bash
+   :substitutions:
 
-   git clone https://github.com/JorisPianezze/models_recowa.git
+   git clone -b release/|release_models_RECOWA| https://github.com/JorisPianezze/models_RECOWA.git models_RECOWA_v|release_models_RECOWA|
 
-Rename the directory into your own project : 
+.. warning::
 
-.. code-block:: bash
+   I recommend to rename the directory into your own project name in case you will have multiple project: 
 
-   mv models_recowa models_YOURPROJECT
+   .. code-block:: bash
+      :substitutions:
+
+      mv models_RECOWA_v0.1 models_YOURPROJECT
 
 Configure your environment
 =========================================================
@@ -28,11 +32,12 @@ Configure your environment
 This coupling system has been tested on several machines. First you need to verify your maching with
 
 .. code-block:: bash
+   :substitutions:
 
-   cd models_YOURPROJECT
+   cd models_RECOWA_v|release_models_RECOWA|
    ./create_environment.sh
 
-If your machine has already been tested you need to have a script :file:`environment.sh` inside models_YOURPROJECT directory.
+If your machine has already been tested you need to have a script :file:`environment.sh` inside models_RECOWA_v0.1 directory.
 
 .. note::
 
@@ -44,14 +49,16 @@ If your machine has already been tested you need to have a script :file:`environ
 Download the libraries
 ====================================
 
-First, you need to download and install NetCDF library. To download tar.gz files, do :
+First, you need to download and install the libraries (NetCDF, OASIS and eventually XIOS).
+To get the libraries,, do :
 
 .. code-block:: bash
+   :substitutions:
 
-   cd models_YOURPROJECT/libraries
-   ./download.sh
+   cd models_RECOWA_v|release_models_RECOWA|/libraries
+   ./download_libraries.sh
 
-You need to have 4 new tar.gz files in the libraries directory.
+You need to have 4 new tar.gz files in the libraries directory and directories for OASIS and XIOS.
 
 .. _download_models:
 
@@ -61,8 +68,9 @@ Download the models
 To download the models already testd in your machine, you can execute this file :
 
 .. code-block:: bash
+   :substitutions:
 
-   cd models_YOURPROJECT
+   cd models_RECOWA_v|release_models_RECOWA|/
    ./download_models.sh
 
 .. _check_installation:

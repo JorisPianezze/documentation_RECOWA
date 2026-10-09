@@ -9,22 +9,22 @@ First you need to compile :ref:`compilation_NETCDF` and :ref:`compilation_OASIS`
 
    For :ref:`compilation_CROCO`'s compilation you need to know the numbers of horizontal and vertical points of your domain before compile it.
 
-.. _compilation_libraries:
+.. _compilation_NETCDF:
 
-Libraries
+NetCDF
 ====================================
 
-You can compile AEC, HDF and NetCDF libraries you can use following commands :
+You can compile ZSTD, AEC, HDF and NetCDF libraries you can use following commands :
 
 .. tab-set::
 
    .. tab-item:: Laptop Ubuntu 20.04
 
-      .. include:: compile_libraries_laptop_joris.rst
+      .. include:: compile_netcdf_laptop_joris.rst
 
    .. tab-item:: Laptop Ubuntu 24.04
 
-      .. include:: compile_libraries_laptop_mathieu.rst
+      .. include:: compile_netcdf_laptop_mathieu.rst
 
 .. tip::
 
@@ -69,10 +69,6 @@ To compile OASIS you can use following commands :
 
       .. include:: compile_oasis_laptop_joris.rst
 
-   .. tab-item:: Laptop Ubuntu 24.04
-
-      .. include:: compile_oasis_laptop_mathieu.rst
-
 .. _compilation_XIOS:
 
 XIOS
@@ -102,10 +98,6 @@ To compile Meso-NH you can use following commands :
    .. tab-item:: Laptop Ubuntu 20.04
 
       .. include:: compile_mesonh_laptop_joris.rst
-
-   .. tab-item:: Laptop Ubuntu 24.04
-
-      .. include:: compile_mesonh_laptop_mathieu.rst
 
 .. note::
    
@@ -225,10 +217,6 @@ WW3
    .. tab-item:: Laptop Ubuntu 20.04
 
       .. include:: compile_ww3_laptop_joris.rst
-
-   .. tab-item:: Laptop Ubuntu 24.04
-
-      .. include:: compile_ww3_laptop_mathieu.rst
 
 
 The steps for compiling WW3 are detailed in the WW3 manual (ww3_dir/manual/), but they are also outlined here for enhanced clarity.
