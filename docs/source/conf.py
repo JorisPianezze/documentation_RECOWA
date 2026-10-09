@@ -35,6 +35,13 @@ urllib.request.urlretrieve(url_install_laptop_mathieu+"compilation_netcdf/compil
 urllib.request.urlretrieve(url_install_laptop_mathieu+"compilation_xios/compile.rst", "compilation/compile_xios_laptop_mathieu.rst")
 urllib.request.urlretrieve(url_install_laptop_mathieu+"compilation_croco/compile.rst", "compilation/compile_croco_laptop_mathieu.rst")
 
+# ------- get kairos cpu files
+url_install_kairos_cpu = "https://raw.githubusercontent.com/JorisPianezze/models_RECOWA/refs/heads/release/0.1/environments/kairos_cpu/"
+urllib.request.urlretrieve(url_install_kairos_cpu+"check_tree.rst", "installation/check_tree_kairos_cpu.rst")
+urllib.request.urlretrieve(url_install_kairos_cpu+"compilation_netcdf/compile.rst", "compilation/compile_netcdf_kairos_cpu.rst")
+urllib.request.urlretrieve(url_install_kairos_cpu+"compilation_oasis/compile.rst", "compilation/compile_oasis_kairos_cpu.rst")
+
+
 # -- General configuration ---------------------------------------------------
 
 extensions = [

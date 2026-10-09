@@ -26,6 +26,10 @@ You can compile ZSTD, AEC, HDF and NetCDF libraries you can use following comman
 
       .. include:: compile_netcdf_laptop_mathieu.rst
 
+   .. tab-item:: Kairos CPU
+
+      .. include:: compile_netcdf_kairos_cpu.rst
+
 .. tip::
 
    To test compilation of the different libraries, do :
@@ -68,6 +72,10 @@ To compile OASIS you can use following commands :
    .. tab-item:: Laptop Ubuntu 20.04
 
       .. include:: compile_oasis_laptop_joris.rst
+
+   .. tab-item:: Kairos CPU
+
+      .. include:: compile_oasis_kairos_cpu.rst
 
 .. _compilation_XIOS:
 

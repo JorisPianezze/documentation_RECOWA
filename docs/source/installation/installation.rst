@@ -90,3 +90,8 @@ At the end of this section, you need to have following script and directories :
 
       .. include:: check_tree_laptop_mathieu.rst
 
+   .. tab-item:: Kairos CPU
+
+      .. include:: check_tree_kairos_cpu.rst
+
+
